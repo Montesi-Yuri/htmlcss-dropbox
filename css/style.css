@@ -69,6 +69,11 @@ header .header-bottom .img-col{
 MAIN
 */
 
+main section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 main section .row-w-3col{
     justify-content: space-between;
 }
@@ -81,8 +86,14 @@ main section .large-single-col{
     margin-top: 30px;
 }
 
-.debug .single-col-section{
-    margin-top: 30px;
+main .full-width-row .single-col{
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+.debug main .full-width-row .single-col .little-square{
+    width: 50%;
+    height: 50%;
 }
 
 /* 
@@ -131,4 +142,14 @@ DEBUG
 
 .debug .single-col-section .small-container *{
     border: 1px dashed red;
+}
+
+.debug main .full-width-row .single-col{
+    border: 1px dashed red;
+    background-color: lightpink;
+}
+
+.debug main .full-width-row .single-col .little-square{
+    border: 1px dashed red;
+    background-color: mediumslateblue;
 }
