@@ -71,7 +71,6 @@ MAIN
 
 main section{
     margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 main section .row-w-3col{
@@ -91,9 +90,34 @@ main .full-width-row .single-col{
     height: calc(100vw / 3);
 }
 
-.debug main .full-width-row .single-col .little-square{
+main .full-width-row .single-col .little-square{
     width: 50%;
     height: 50%;
+}
+
+main section.full-width-row{
+    width: 100%;
+}
+
+main section:nth-child(6){
+    background-color: #B4D0E7;
+    margin-top: 0px;
+    padding: 30px;
+}
+main section:nth-child(7){
+    padding-bottom: 50px;
+}
+
+main section:nth-child(7) .small-container div:first-child{
+    border-bottom: 2px solid grey;
+}
+
+main section:nth-child(7) .small-container div{
+    padding: 30px 5px;
+}
+
+main section:nth-child(7) .small-container div i{
+    padding-left: 30%;
 }
 
 /* 
@@ -152,4 +176,8 @@ DEBUG
 .debug main .full-width-row .single-col .little-square{
     border: 1px dashed red;
     background-color: mediumslateblue;
+}
+
+.debug main section:nth-child(7){
+    background-color: lightcoral;
 }
