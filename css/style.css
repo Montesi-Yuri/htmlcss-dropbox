@@ -77,8 +77,13 @@ main section .row-w-3col .single-col{
     width: calc(90% / 3 );
 }
 
+main section .large-single-col{
+    margin-top: 30px;
+}
 
-
+.debug .single-col-section{
+    margin-top: 30px;
+}
 
 /* 
 FOOTER
@@ -111,4 +116,19 @@ DEBUG
     background-color: bisque;
     border: 1px dashed red;
     height: 200px;
+}
+
+.debug main section .large-single-col{
+    background-color: lightgoldenrodyellow;
+    border: 1px dashed red;
+    height: 100px;
+}
+
+.debug .single-col-section .small-container{
+    background-color: orange;
+    height: 400px;
+}
+
+.debug .single-col-section .small-container *{
+    border: 1px dashed red;
 }
