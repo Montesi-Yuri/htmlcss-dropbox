@@ -156,6 +156,18 @@ main section{
     margin-top: 160px;
 }
 
+main img{
+    width: 100%;
+}
+
+.img-col{
+    width: 60%;
+}
+
+.text-col{
+    width: 40%;
+}
+
 /* MAIN 1ST SECTION UPPER HALF */
 
 main .section-n1:first-child div span{
@@ -292,6 +304,36 @@ main section:nth-child(7) .small-container div i{
 }
 
 /* 
+MAIN 2ND SECTION
+*/
+
+main section .text-col {
+    padding: 40px 30px;
+}
+
+main section .text-col *{
+    margin: 20px 0px;
+    font-size: 1.1em;
+}
+
+/* 
+MAIN 3rd SECTION
+*/
+
+main .section-n3 .small-container div .single-col *:not(img){
+    padding: 10px 10px;
+    text-align: left;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+/* 
 FOOTER
 */
 
@@ -361,14 +403,14 @@ DEBUG
     height: 100px;
 } */
 
-.debug .single-col-section .small-container{
+/* .debug .single-col-section .small-container{
     background-color: orange;
     height: 400px;
-}
+} */
 
-.debug .single-col-section .small-container *{
+/* .debug .single-col-section .small-container *{
     border: 1px dashed red;
-}
+} */
 
 .debug main .full-width-row .single-col{
     background-color: lightpink;
