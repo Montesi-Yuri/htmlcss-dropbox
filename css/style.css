@@ -35,6 +35,7 @@ body{
     padding: 6px 12px;
     color: white;
     text-decoration: none;
+    font-size: 0.75em;
 }
 
 .white-button{
@@ -43,7 +44,16 @@ body{
     color: black;
     border: 1px solid black;
     text-decoration: none;
+    font-size: 0.85em;
 }
+
+.full-width-button{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
 
 /* 
 HEADER
@@ -146,6 +156,8 @@ main section{
     margin-top: 160px;
 }
 
+/* MAIN 1ST SECTION UPPER HALF */
+
 main .section-n1:first-child div span{
     line-height: 2em;
     padding-right: 30px;
@@ -161,6 +173,11 @@ main section .small-container > div:first-of-type{
 
 main section .row-w-3col .single-col{
     width: calc(90% / 3 );
+    border: 1px solid grey;
+}
+
+main section .row-w-3col .single-col > *:not(:first-child):not(hr){
+    padding: 15px 25px;
 }
 
 main section .row-w-3col .single-col p:first-of-type{
@@ -170,13 +187,73 @@ main section .row-w-3col .single-col p:first-of-type{
     border-bottom: 1px solid black;
 }
 
-main section .row-w-3col .single-col ul li{
-    list-style: none;
+main section .row-w-3col .single-col p:nth-of-type(2){
+   font-weight: bold;
 }
 
-main section .large-single-col{
-    margin-top: 30px;
+main section .row-w-3col .single-col p:nth-child(6){
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
+main section .row-w-3col .single-col p:last-of-type{
+    padding-bottom: 30px;
+}
+
+main section .row-w-3col .single-col ul li{
+    list-style: none;
+    padding: 10px 0px;
+}
+
+main section .row-w-3col .single-col ul:nth-of-type(2) li i{
+    color: #0061FF;
+} 
+
+main section .row-w-3col .single-col > hr{
+    width: calc(100% / 4);
+    margin-left: 20px;
+    margin-bottom: 30px;
+} 
+
+main section .row-w-3col .single-col > h3{
+    margin-top: 20px;
+} 
+
+
+    
+
+/* MAIN 1ST SECTION BOTTOM HALF */
+
+#large-single-col{
+    margin-top: 50px;
+    width: 100%;
+}
+
+#large-single-col h3{
+    display: inline-block;
+}
+
+#large-single-col p:nth-of-type(2){
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 64%;
+    font-weight: 500;
+}
+
+#large-single-col p:nth-of-type(3){
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
 
 main .full-width-row .single-col{
     width: calc(100% / 3);
@@ -273,17 +350,16 @@ DEBUG
     border: 1px dashed red;
 } */
 
-.debug main section .row-w-3col .single-col{
+/* .debug main section .row-w-3col .single-col{
     background-color: bisque;
-    border: 1px dashed red;
-    /* height: 200px; */
-}
+    height: 200px; 
+} */
 
-.debug main section .large-single-col{
+/* .debug main section .large-single-col{
     background-color: lightgoldenrodyellow;
     border: 1px dashed red;
     height: 100px;
-}
+} */
 
 .debug .single-col-section .small-container{
     background-color: orange;
@@ -295,7 +371,6 @@ DEBUG
 }
 
 .debug main .full-width-row .single-col{
-    border: 1px dashed red;
     background-color: lightpink;
 }
 
@@ -306,4 +381,12 @@ DEBUG
 
 .debug main section:nth-child(7){
     background-color: lightcoral;
+}
+
+.debug main section .row-w-3col .single-col ul li{
+    border: 1px dashed red;
+}
+
+.debug main section .row-w-3col .single-col ul li i{
+    border: 1px dashed red;
 }
