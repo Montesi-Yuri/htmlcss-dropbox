@@ -192,7 +192,7 @@ main section .row-w-3col .single-col > *:not(:first-child):not(hr){
     padding: 15px 25px;
 }
 
-main section .row-w-3col .single-col p:first-of-type{
+main .section-n1 .row-w-3col .single-col p:first-of-type{
     text-align: center;
     vertical-align: middle;
     padding: 10px;
@@ -326,6 +326,10 @@ main .section-n3 .small-container div .single-col *:not(img){
     margin: 0;
 }
 
+main .section-n3 .small-container div .single-col{
+    margin-bottom: 30px;
+    border: none;
+}
 
 
 
