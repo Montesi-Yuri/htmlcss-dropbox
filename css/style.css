@@ -30,6 +30,21 @@ body{
     justify-content: space-between;
 }
 
+.blue-button{
+    background-color: #0061FF;
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.white-button{
+    background-color: white;
+    padding: 5px 12px;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
 /* 
 HEADER
 */
@@ -37,7 +52,11 @@ HEADER
 /* HEADER TOP */
 header .header-top{
     background-color: white;
-    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header nav li{
@@ -46,15 +65,35 @@ header nav li{
 
 header nav .header-top-left{
     text-align: left;
-    text-decoration: none;
 }
 
 header nav .header-top-right{
     text-align: right;
-    text-decoration: none;
 }
 
+header nav ul div li a{
+    text-decoration: none;
+    vertical-align: middle;
+    color: black;
+}
+
+header nav ul div li{
+    margin: 20px 20px;
+}
+
+
 /* HEADER BOTTOM */
+
+header .header-bottom{
+    padding-top: 140px;
+    background-color: #B4D0E7;
+    height: 710px;
+}
+
+header .header-bottom h1{
+    font-size: 4em;
+    font-weight: 900;
+}
 
 header .header-bottom .text-col{
     width: 30%;
@@ -64,21 +103,75 @@ header .header-bottom .img-col{
     width: 70%;
 }
 
+header .header-bottom .text-col p{
+    padding: 20px 0px;
+}
+header .header-bottom .img-col img{
+    width: 100%;
+}
+
 
 /* 
 MAIN
 */
 
+.checked-radio-button{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border-color: #0061FF;
+    border-style: solid;
+    border-width: 4px;
+    display: inline-block;
+    line-height: 2em;
+}
+
+.unchecked-radio-button{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    line-height: 2em;
+}
+
+main h2{
+    font-size: 2.5em;
+    padding-bottom: 40px;
+}
+
 main section{
-    margin-top: 30px;
+    margin-top: 160px;
+}
+
+main .section-n1:first-child div span{
+    line-height: 2em;
+    padding-right: 30px;
 }
 
 main section .row-w-3col{
     justify-content: space-between;
 }
 
+main section .small-container > div:first-of-type{
+    padding-top: 30px;
+}
+
 main section .row-w-3col .single-col{
     width: calc(90% / 3 );
+}
+
+main section .row-w-3col .single-col p:first-of-type{
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+main section .row-w-3col .single-col ul li{
+    list-style: none;
 }
 
 main section .large-single-col{
@@ -165,25 +258,25 @@ footer .big-container div:nth-child(2) span{
 DEBUG
 */
 
-.debug .header-top{
+/* .debug .header-top{
     background-color: aquamarine;
     border: 1px dashed red;
-}
+} */
 
-.debug .header-bottom{
+/* .debug .header-bottom{
     background-color: lightgreen;
     border: 1px dashed red;
-    height: 500px;
+    height: 700px;
 }
 
 .debug .header-bottom *{
     border: 1px dashed red;
-}
+} */
 
 .debug main section .row-w-3col .single-col{
     background-color: bisque;
     border: 1px dashed red;
-    height: 200px;
+    /* height: 200px; */
 }
 
 .debug main section .large-single-col{
