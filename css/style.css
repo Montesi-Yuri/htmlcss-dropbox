@@ -332,6 +332,76 @@ main .section-n3 .small-container div .single-col{
 }
 
 
+/* 
+MAIN 5TH SECTION
+*/
+
+main section div .single-col .little-square{
+    position: relative;
+}
+
+main section .little-square img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -100%);
+    scale: 50%;
+    filter: invert(1);
+}
+
+main section .little-square-1st-col div.little-square:first-of-type{
+    background-color: #A2D39B;
+}
+
+main section .little-square-1st-col div.little-square:nth-of-type(2){
+    background-color: #61082B;
+}
+
+main section .little-square-1st-col div.little-square:nth-of-type(3){
+    background-color: #0093CE;
+}
+
+main section .little-square-1st-col div.little-square:nth-of-type(4){
+    background-color: #FF1C1C;
+}
+
+main section .full-width-row > div:nth-child(2){
+    background-color: #F5F5F5;
+}
+
+main section .little-square-2nd-col div.little-square:nth-of-type(1){
+    background-color: #D5001F;
+}
+
+main section .little-square-2nd-col div.little-square:nth-of-type(2){
+    background-color: #B4D0E7;
+}
+
+main section .little-square-2nd-col div.little-square:nth-of-type(3){
+    background-color: #0D2481;
+}
+main section .little-square-2nd-col div.little-square:nth-of-type(4){
+    background-color: #FFD830;
+}
+
+main section .full-width-row .big-square-col img{
+    position: relative;
+    scale: 50%;
+    left: -25%;
+}
+
+main section .full-width-row .big-square-col{
+    padding: 0px 50px;
+}
+
+main section .full-width-row .big-square-col hr{
+    width: calc(100% / 4);
+    margin-bottom: 30px;
+}
+
+main section .full-width-row .big-square-col p{
+    margin-bottom: 40px;
+}
 
 
 
@@ -416,14 +486,14 @@ DEBUG
     border: 1px dashed red;
 } */
 
-.debug main .full-width-row .single-col{
+/* .debug main .full-width-row .single-col{
     background-color: lightpink;
 }
 
 .debug main .full-width-row .single-col .little-square{
     border: 1px dashed red;
-    background-color: mediumslateblue;
-}
+    background-color: mediumslateblue; 
+}*/
 
 .debug main section:nth-child(7){
     background-color: lightcoral;
