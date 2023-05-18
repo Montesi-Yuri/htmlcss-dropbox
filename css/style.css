@@ -120,6 +120,9 @@ header .header-bottom .img-col img{
     width: 100%;
 }
 
+header .header-bottom .text-col a[href="#shortcut1"]{
+    color: black;
+}
 
 /* 
 MAIN
