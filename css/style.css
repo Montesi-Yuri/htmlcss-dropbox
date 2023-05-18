@@ -32,7 +32,7 @@ body{
 
 .blue-button{
     background-color: #0061FF;
-    padding: 6px 12px;
+    padding: 8px 12px;
     color: white;
     text-decoration: none;
     font-size: 0.75em;
@@ -40,11 +40,11 @@ body{
 
 .white-button{
     background-color: white;
-    padding: 5px 12px;
+    padding: 8px 12px;
     color: black;
     border: 1px solid black;
     text-decoration: none;
-    font-size: 0.85em;
+    font-size: 0.75em;
 }
 
 .full-width-button{
@@ -168,12 +168,10 @@ main img{
     width: 40%;
 }
 
-/* MAIN 1ST SECTION UPPER HALF */
 
-main .section-n1:first-child div span{
-    line-height: 2em;
-    padding-right: 30px;
-}
+/* 
+MAIN 1ST SECTION 
+*/
 
 main section .row-w-3col{
     justify-content: space-between;
@@ -185,18 +183,18 @@ main section .small-container > div:first-of-type{
 
 main section .row-w-3col .single-col{
     width: calc(90% / 3 );
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
 }
 
 main section .row-w-3col .single-col > *:not(:first-child):not(hr){
     padding: 15px 25px;
 }
 
-main .section-n1 .row-w-3col .single-col p:first-of-type{
+main .section-n1 .row-w-3col .single-col > p:first-of-type{
     text-align: center;
     vertical-align: middle;
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgrey;
 }
 
 main section .row-w-3col .single-col p:nth-of-type(2){
@@ -212,9 +210,13 @@ main section .row-w-3col .single-col p:last-of-type{
     padding-bottom: 30px;
 }
 
+main section .row-w-3col .single-col .fa-ul{
+    margin-left: 25px;
+}
+
 main section .row-w-3col .single-col ul li{
-    list-style: none;
     padding: 10px 0px;
+    list-style: none;
 }
 
 main section .row-w-3col .single-col ul:nth-of-type(2) li i{
@@ -223,62 +225,53 @@ main section .row-w-3col .single-col ul:nth-of-type(2) li i{
 
 main section .row-w-3col .single-col > hr{
     width: calc(100% / 4);
-    margin-left: 20px;
+    margin-left: 25px;
     margin-bottom: 30px;
 } 
 
 main section .row-w-3col .single-col > h3{
     margin-top: 20px;
+    font-size: 1.35em;
 } 
-
-
-    
-
-/* MAIN 1ST SECTION BOTTOM HALF */
 
 #large-single-col{
     margin-top: 50px;
     width: 100%;
 }
 
-#large-single-col h3{
-    display: inline-block;
+#large-single-col div p:first-of-type{
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    font-size: 0.9em;
 }
 
-#large-single-col p:nth-of-type(2){
-    display: inline-block;
-    position: relative;
-    top: 0;
-    left: 64%;
-    font-weight: 500;
+#large-single-col div p{
+    border: none;
+}
+
+#large-single-col h3{
+    font-size: 1.5em;
+}
+
+#large-single-col > p{
+    width: 100%;
+}
+#large-single-col span{
+    font-size: 0.9em;
+}
+
+#large-single-col div:nth-child(2){
+    width: calc((90% / 3) * 2);
+    margin-bottom: 20px;
+}
+
+#large-single-col div:nth-child(3){
+    width: calc((90% / 3) * 1);
 }
 
 #large-single-col p:nth-of-type(3){
     font-weight: bold;
-}
-
-
-
-
-
-
-
-
-
-
-
-main .full-width-row .single-col{
-    width: calc(100% / 3);
-    height: calc(100vw / 3);
-}
-
-main .full-width-row .single-col .little-square{
-    width: 50%;
-    height: 50%;
-}
-
-main section.full-width-row{
-    width: 100%;
 }
 
 main section:nth-child(6){
@@ -291,10 +284,6 @@ main section:nth-child(7){
     padding-bottom: 50px;
 }
 
-main section:nth-child(7) .small-container div:first-child{
-    border-bottom: 2px solid grey;
-}
-
 main section:nth-child(7) .small-container div{
     padding: 30px 5px;
 }
@@ -302,6 +291,7 @@ main section:nth-child(7) .small-container div{
 main section:nth-child(7) .small-container div i{
     padding-left: 30%;
 }
+
 
 /* 
 MAIN 2ND SECTION
@@ -311,10 +301,18 @@ main section .text-col {
     padding: 40px 30px;
 }
 
-main section .text-col *{
+main .single-col-section .small-container .flex-row .text-col *{
     margin: 20px 0px;
-    font-size: 1.1em;
 }
+
+main .single-col-section .small-container .flex-row .text-col p a{
+    font-size: 0.9em;
+}
+
+main .single-col-section .small-container .flex-row .text-col h3{
+    font-size: 1.5em;
+}
+
 
 /* 
 MAIN 3rd SECTION
@@ -336,6 +334,20 @@ main .section-n3 .small-container div .single-col{
 MAIN 5TH SECTION
 */
 
+main section.full-width-row{
+    width: 100%;
+}
+
+main .full-width-row .single-col{
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+main .full-width-row .single-col .little-square{
+    width: 50%;
+    height: 50%;
+}
+
 main section div .single-col .little-square{
     position: relative;
 }
@@ -351,6 +363,7 @@ main section .little-square img{
 
 main section .little-square-1st-col div.little-square:first-of-type{
     background-color: #A2D39B;
+    border: solid 15px #D1E9CD;
 }
 
 main section .little-square-1st-col div.little-square:nth-of-type(2){
@@ -423,6 +436,20 @@ main section.section-n6 .small-container div h3{
     font-size: 2em;
 }
 
+/* 
+MAIN 7TH SECTION
+*/
+
+main section.section-n7 .small-container div:not(:first-child){
+    border-bottom: 2px solid lightgray;
+}
+main section.section-n7 .small-container *{
+    font-weight: 700;
+}
+
+main section.section-n7 .small-container{
+    margin-bottom: 70px;
+}
 
 
 /* 
@@ -443,14 +470,23 @@ footer .footer-col a{
     display: block;
     text-decoration: none;
     color: white; 
+    font-size: 0.9em;
+}
+
+footer .footer-col h3{
+    font-size: 1.5em;
+    padding-bottom: 15px;
 }
 
 footer .footer-col *{
     padding: 10px;
 }
 
+footer .big-container hr{
+    width: calc(100% / 10);
+}
+
 footer .big-container .flex-row div.footer-col:first-child{
-    border-bottom: 1px solid grey;
     padding-bottom: 100px;
 }
 
@@ -462,7 +498,9 @@ footer .big-container div:nth-child(2) span{
     padding: 0px 5px;
 }
 
-
+footer .big-container > div:last-child{
+    margin-top: 40px;
+}
 
 
 /* 
@@ -513,14 +551,14 @@ DEBUG
     background-color: mediumslateblue; 
 }*/
 
-.debug main section:nth-child(7){
+/* .debug main section:nth-child(7){
     background-color: lightcoral;
-}
-
+} */
+/* 
 .debug main section .row-w-3col .single-col ul li{
     border: 1px dashed red;
 }
 
 .debug main section .row-w-3col .single-col ul li i{
     border: 1px dashed red;
-}
+} */
