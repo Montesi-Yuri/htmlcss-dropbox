@@ -7,6 +7,10 @@ RESET
     box-sizing: border-box;
 }
 
+ul{
+    list-style-type: none ;
+}
+
 /* 
 GENERAL
 */
@@ -69,9 +73,6 @@ header .header-top{
     z-index: 1;
 }
 
-header nav li{
-    display: inline-block;
-}
 
 header nav .header-top-left{
     text-align: left;
@@ -81,14 +82,61 @@ header nav .header-top-right{
     text-align: right;
 }
 
-header nav ul div li a{
+header nav ul li a{
     text-decoration: none;
     vertical-align: middle;
     color: black;
 }
 
-header nav ul div li{
-    margin: 20px 20px;
+header nav .header-top-left > li{
+    padding: 20px 20px;
+}
+
+header nav .header-top-right > li{
+    padding: 20px 20px;
+}
+
+
+/* DROPDOWN MENU HEADER */
+
+header .header-top .dropdown-content-1{
+    position: absolute;
+    top: 70px;
+    left: 167px;
+    width: 415px;
+    background-color: #F2EEE8;
+    z-index: 2;
+    display: none;
+    padding: 0px 15px;
+}
+
+li.trigger:hover .dropdown-content-1{
+    display: flex;
+}
+
+li.trigger:hover{
+    background-color: #F2EEE8;
+}
+
+header .header-top .dropdown-content-1 h4{
+    font-size: 0.8em;
+}
+
+header .header-top .dropdown-content-1 > div{
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header .header-top .dropdown-content-1 ul li{
+    padding-top: 15px;
+    font-size: 0.75em;
+    display: block;
+}
+
+header .header-top .dropdown-content-1 ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -443,9 +491,15 @@ main section.section-n6 .small-container div h3{
 MAIN 7TH SECTION
 */
 
-main section.section-n7 .small-container div:not(:first-child){
+main section.section-n7 .small-container li{
     border-bottom: 2px solid lightgray;
+    padding: 40px 0px;
 }
+
+main section.section-n7 .small-container li i{
+    padding-right: 5%;
+}
+
 main section.section-n7 .small-container *{
     font-weight: 700;
 }
@@ -453,6 +507,36 @@ main section.section-n7 .small-container *{
 main section.section-n7 .small-container{
     margin-bottom: 70px;
 }
+
+main section.section-n7 .small-container li{
+    list-style: none;
+}
+
+/* ACCORDION 7TH SECTION */
+
+
+main section.section-n7 .small-container [class|=hidden-answer]{
+    border-top: 2px solid lightgray;
+    display: none;
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 100%;
+    font-weight: 500;
+    color: #61082B;
+}
+
+main .section-n7 .small-container .faq-question-1:hover .hidden-answer-1{
+    display: flex;
+} 
+
+main .section-n7 .small-container .faq-question-2:hover .hidden-answer-2{
+    display: flex;
+} 
+
+main .section-n7 .small-container .faq-question-3:hover .hidden-answer-3{
+    display: flex;
+} 
+
 
 
 /* 
